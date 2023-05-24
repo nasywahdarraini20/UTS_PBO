@@ -1,0 +1,12 @@
+package Perpustakaan;
+
+public class Main {
+    public static void main(String[] args){
+        Buku buku = new Buku("Logika Pemrograman Java", "Abdul Kadir");
+        Mahasiswa mahasiswa = new Mahasiswa("Nasywah Darraini", 22001, "Teknik Informatika");
+        String tanggalPinjam = "24 Mei 2023";
+        
+        Peminjaman peminjaman = new Peminjaman(buku, mahasiswa, tanggalPinjam);
+        peminjaman.displayInfoPeminjaman();
+    }
+}

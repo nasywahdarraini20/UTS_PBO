@@ -1,0 +1,25 @@
+package Perpustakaan;
+
+public abstract class Anggota {
+    private String nama;
+    private int idAnggota;
+    
+    public Anggota(String nama, int idAnggota){
+        this.nama = nama;
+        this.idAnggota = idAnggota;
+    }
+    
+    public String getNama(){
+        return nama;
+    }
+    
+    public int getIdAnggota(){
+        return idAnggota;
+    }
+    
+    public void displayInfoAnggota(){
+        System.out.println("Info Anggota: ");
+        System.out.println("Nama Anggota: " + getNama());
+        System.out.println("ID Anggota: " + getIdAnggota());
+    }
+}

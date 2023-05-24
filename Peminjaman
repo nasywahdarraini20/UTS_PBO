@@ -1,0 +1,21 @@
+package Perpustakaan;
+
+public class Peminjaman {
+    private Buku buku;
+    private Anggota anggota;
+    private String tanggalPinjam;
+    
+    public Peminjaman(Buku buku, Anggota anggota, String tanggalPinjam){
+        this.buku = buku;
+        this.anggota = anggota;
+        this.tanggalPinjam = tanggalPinjam;
+    }
+    
+    public void displayInfoPeminjaman(){
+        System.out.println("Info Peminjaman");
+        anggota.displayInfoAnggota();
+        System.out.println("Judul Buku: " + buku.getJudul());
+        System.out.println("Pengarang: " + buku.getPengarang());
+        System.out.println("Tanggal Pinjam: " + tanggalPinjam);
+    }
+}

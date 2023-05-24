@@ -1,0 +1,22 @@
+package Perpustakaan;
+
+public class Mahasiswa extends Anggota {
+    private String prodi;
+    
+    public Mahasiswa(String nama, int idAnggota, String prodi){
+        super(nama, idAnggota);
+        this.prodi = prodi;
+    }
+    
+    public String getProdi(){
+        return prodi;
+    }
+    
+    @Override
+    public void displayInfoAnggota(){
+       super.displayInfoAnggota();
+       System.out.println("Program Studi: " + prodi);
+    }
+}
+    
+  
